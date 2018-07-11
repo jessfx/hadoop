@@ -28,7 +28,7 @@ dfs.datanode.data.dir|存储HDFS block的本地文件系统路径，可有多个
 
 ## 3. mapred-site.xml
 
-** Mapreduce Application **
+**Mapreduce Application**
 parameter|value|note
 ---|---|---
 mapreduce.framework.name|yarn|设置mapreduce执行框架yarn
@@ -40,7 +40,7 @@ mapreduce.task.io.sort.mb||map环形缓存大小
 mapreduce.task.io.sort.factor|100|排序时一次合并更多数据流
 mapreduce.reduce.shuffle.parallelcopies|50|
 
-** Mapreduce JobHistory Server **
+**Mapreduce JobHistory Server**
 parameter|value|note
 ---|---|---
 mapreduce.jobhistory.address|host:port|默认端口10020
@@ -50,13 +50,13 @@ mapreduce.jobhistory.done-dir|mr-history/done|MR历史服务器存放历史文�
 
 ## 4. yarn-site.xml
 
-** ResourceManager和NodeManager共同参数 **
+**ResourceManager和NodeManager共同参数**
 parameter|value|note
 ---|---|---
 yarn.acl.enable|true/false|acl规则过滤
 yarn.admin.acl|Admin ACL|用户acl规则过滤
 yarn.log-aggregation-enable|false|log aggregation
-** ResourceManager参数 **
+**ResourceManager参数**
 parameter|value|note
 ---|---|---
 yarn.resourcemanager.address|host:port|资源管理器地址
@@ -70,7 +70,7 @@ yarn.scheduler.minimum-allocation-mb|任务队列的最小内存|单位MB
 yarn.scheduler.maximum-allocation-mb|任务队列的最大内存|单位MB
 yarn.resourcemanager.nodes.include-path/yarn.resourcemanager.exclude-path|使用中的NodeManagers/不使用的NodeManagers|用于控制资源总数
 
-** NodeManager参数 **
+**NodeManager参数**
 parameter|value|note
 ---|---|---
 yarn.nodemanager.memory-mb|NodeManager物理内存|决定了可用资源总量
@@ -81,7 +81,7 @@ yarn.nodemanager.log.retain-seconds|10800|retain文件超时时间，当log-aggr
 yarn.nodemanager.remote-app-log-dir|/logs|MR日志存放目录，当log-aggregation关闭时生效
 yarn.nodemanager.remote-app-log-dir-suffix|logs|用户MR日志存放目录当log-aggregation关闭时生效
 yarn.nodemanager.aux-services|mapreduce_shuffle|配置MR应用的shuffle服务
-** HistoryServer参数 **
+**HistoryServer参数**
 parameter|value|note
 ---|---|---
 yarn.log-aggregation.retain-seconds|-1|

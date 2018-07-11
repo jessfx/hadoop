@@ -6,9 +6,9 @@
 
 [hadoop2.8.3集群式配置官方文档](http://hadoop.apache.org/docs/r2.8.3/hadoop-project-dist/hadoop-common/ClusterSetup.html)
 
-** 硬件环境：虚拟机/实体机2台或以上 **
+**硬件环境：虚拟机/实体机2台或以上**
 
-** 系统版本：ubuntu16.04 **
+**系统版本：ubuntu16.04**
 
 ---
 
@@ -22,7 +22,7 @@
 设备1 | master | 192.168.10.5 | 192.168.10.5
 设备2 | slave1 | 192.168.10.6 | 192.168.10.5
 master
-** /etc/network/interfaces **
+**/etc/network/interfaces**
 
     auto lo
     iface lo inet loopback
@@ -38,12 +38,12 @@ slave1同理
 
 ### 1.2 修改hostname和hosts文件
 
-** /etc/hostname **
+**/etc/hostname**
 
     #slave1改为slave1
     master
 
-** /etc/hosts **
+**/etc/hosts**
 
     127.0.0.0 localhost
     192.168.10.5 master
@@ -91,11 +91,11 @@ slave1上同理
 
 ### 4.1 配置文件
 
-** core-site.xml,hdfs-site.xml,mapred-site.xml,yarn-site.xml **
+**core-site.xml,hdfs-site.xml,mapred-site.xml,yarn-site.xml**
 
 参考hadoop2.8.3伪分布模式hadoop配置，所有localhost替换为master
 
-** etc/hadoop/slaves **
+**etc/hadoop/slaves**
 
     master
     slave1
@@ -109,13 +109,13 @@ slave1上同理
 ## 5. 启动hadoop集群
 
 在
-** master **
+**master**
 上执行命令
 
     start-all.sh
     mr-jobhistory-deamon.sh historyserver start
 
-** 验证 **
+**验证**
 
 master上输入`jps`,将输出以下内容
 

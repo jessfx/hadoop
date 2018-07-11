@@ -6,9 +6,9 @@ jessfx
 
 ## 0. 前言
 
-实践本文章前，请完成====hadoop2.8.3单机模式====
+实践本文章前，请完成[hadoop2.8.3单机模式](https://github.com/jessfx/hadoop/blob/master/hadoop2.8.3%E5%8D%95%E6%9C%BA%E6%A8%A1%E5%BC%8F.md)
 
-** 系统版本：ubuntu16.04 **
+**系统版本：ubuntu16.04**
 
 ---
 
@@ -43,17 +43,17 @@ jessfx
     mkdir $HADOOP_HOME/dfs/name
     mkdir $HADOOP_HOME/dfs/data
 
-** bin/hadoop-evn.sh **
+**bin/hadoop-evn.sh**
 加入jdk环境变量
 
     export $JAVA_HOME=/opt/jvm/jdk1.8
 
-** bin/yarn-evn.sh **
+**bin/yarn-evn.sh**
 加入jdk环境变量
 
     export $JAVA_HOME=/opt/jvm/jdk1.8
 
-** etc/hadoop/core-site.xml **
+**etc/hadoop/core-site.xml**
 
     <configuration>
         #指定hdfs访问端口
@@ -67,7 +67,7 @@ jessfx
         </property>
     </configuration>
 
-** etc/hadoop/hdfs-site.xml **
+**etc/hadoop/hdfs-site.xml**
 
     <configuration>
         #hdfs冗余度
@@ -99,7 +99,7 @@ jessfx
 
 #### yarn单点模式配置
 
-** etc/hadoop/mapred-site.xml **
+**etc/hadoop/mapred-site.xml**
 
     <configuration>
         <property>
@@ -116,7 +116,7 @@ jessfx
         </property>
     </configuration>
 
-** etc/hadoop/yarn-site.xml **
+**etc/hadoop/yarn-site.xml**
 
     <configuration>
         <property>

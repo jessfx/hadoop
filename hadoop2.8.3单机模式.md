@@ -6,7 +6,7 @@ jessfx
 
 ## 0.前言
 
-** 系统环境：ubuntu16.04 **
+**系统环境：ubuntu16.04**
 
 [hadoop2.8.3官方文档](http://hadoop.apache.org/docs/)
 
@@ -30,7 +30,7 @@ jessfx
 
 ### 1.2 jdk环境配置
 
-#### **推荐安装Oracle jdk**
+####**推荐安装Oracle jdk**
 
 [下载Oracle jdk](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
